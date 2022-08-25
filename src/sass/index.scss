@@ -1,4 +1,12 @@
 @import './common';
+
+@import './start/var';
+@import './start/reset';
+@import './start/card-set';
+@import './start/visually-hiden';
+@import './start/container';
+@import './start/base';
+
 @import './header';
 @import './hero';
 @import './offerings';
@@ -6,5 +14,3 @@
 @import './customers_say';
 @import './subscribe';
 @import './footer';
-
-
