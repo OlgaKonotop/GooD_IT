@@ -46,6 +46,7 @@
 
   @media (min-width: 768px) {
     gap: 28px;
+    margin-right: 28px;
   }
 
   @media (max-width: 768px) {
@@ -90,10 +91,6 @@
     &--last {
       border-radius: 0px 0px 30px 30px;
     }
-
-    &:last-child {
-      display: none;
-    }
   }
 }
 
@@ -102,7 +99,11 @@
   height: 32px;
   background-color: var(--bg-accent-cl);
   border-radius: 30px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
+
 .menu-list__link {
   &--after::after {
     .menu-list__item:hover & {
