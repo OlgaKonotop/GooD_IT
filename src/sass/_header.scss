@@ -1,13 +1,25 @@
 .header--flex{
     display: flex;
     justify-content: space-between;
-    padding-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 
+.logo__svg{
+    display: block;
+}
+
 .menu{
+    position:relative;
     display: flex;
     align-items: center;
+
+    @media (max-width:767px){
+        &:hover .menu-list{
+            visibility: visible;
+        }
+    }
 }
 
 .menu__svg{
@@ -19,26 +31,73 @@
 
 .nav{
     display: flex;
+    
+    @media (max-width:768px){
+        visibility: hidden;
+        position: absolute;
+        top: 40px;
+        right: 0px;
+    }
+   
 }
 
-.menu--list{
+.menu-list{
     display: flex;
-    gap: 28px;
     align-items: center;
+    
+    @media (min-width:768px) {
+        gap: 28px;
+    }
+
     @media (max-width:768px) {
-        display: none;
+        width: 130px;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        background: #FEFEFE;
+        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+        border-radius: 30px 0px 30px 30px;
     }
 }
 
-.menu--list__item{
+.menu-list__item{
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     
-    &:hover{
-        color: var(--bg-accent-cl);
-    } 
+
+    @media (min-width:768px){
+        &:hover{
+            color: var(--bg-accent-cl);
+        }
+    }
+    
+
+    @media (max-width:768px){
+        width: 100%;
+        padding: 16px 16px;
+        font-size: 16px;
+        line-height: 19px;
+        color:var(--main-txt-cl);
+
+        &:hover{
+            background-color: var(--bg-accent-cl);
+        }
+        &--first{
+            border-radius: 30px 0px 0px 0px;
+        }
+        &--last{
+            border-radius: 0px 0px 30px 30px;
+        }
+        
+        &:last-child{
+            display: none;
+        }
+    }
 }
 
 .header-btn{
@@ -46,4 +105,16 @@
     height: 32px;
     background-color:var(--bg-accent-cl);
     border-radius: 30px;
+}
+.menu-list__link{
+    &--after::after{
+        .menu-list__item:hover &{
+        display: block;
+        width: 100%;
+        height: 1px;
+        content: "";
+        background-color: var(--bg-accent-cl);
+        transition: var(--animation);
+        }
+    }
 }
