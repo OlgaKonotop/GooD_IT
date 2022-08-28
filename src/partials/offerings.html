@@ -1,24 +1,45 @@
 <!-- секція переваги-->
 <section class="offerings section">
   <div class="offerings__img img">
-    <img
-      class="offerings__img--img"
-      src="./images/offerings/apple.png"
-      alt="green apple"
-      width="396"
-      height="502"
-    />
+    <picture>
+      <source
+        media="(min-width:1200px)"
+        srcset="
+          ./images/offerings/apple@1x-desk.webp 1x,
+          ./images/offerings/apple@2x-desk.webp 2x
+        " />
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./images/offerings/pple@1x-lg_tab.webp 1x,
+          ./images/offerings/pple@2x-lg_tab.webp 2x
+        " />
+      <source
+        media="(min-width:480px)"
+        srcset="
+          ./images/offerings/pple@1x-sm_mb.webp 1x,
+          ./images/offerings/pple@2x-sm_mb.webp 2x
+        " />
+      <img
+        class="offerings__img--img"
+        src="./images/offerings/apple.png"
+        alt="green apple"
+        width="396"
+        height="502"
+    /></picture>
     <div class="img__tablet">
       <img
+        srcset="./images/offerings/aple@1x-md_tab.webp 1px, ./images/offerings/aple@2x-md_tab.webp 2px"
         class="img--md"
-        src="./images/offerings/apple-md.png"
+        src="./images/offerings/apple-md_tab.png"
         alt="green apple"
         width="166"
         height="210"
       />
       <img
+        srcset="./images/offerings/aple@1x-sm_tab.webp 1px, ./images/offerings/aple@2x-sm_tab.webp 2px"
         class="img--sm"
-        src="./images/offerings/apple-sm.png"
+        src="./images/offerings/apple-sm_tab.png"
         alt="green apple"
         width="108"
         height="136"
@@ -66,7 +87,7 @@
       <div class="info__icon">
         <h3 class="info__title">Read More</h3>
         <svg class="info__icon--icon icon" width="14" height="14">
-          <use href="./images/icons/icons.svg#right_arrow"></use>
+          <use href="./images/icons/icons.svg#down"></use>
         </svg>
       </div>
     </div>
