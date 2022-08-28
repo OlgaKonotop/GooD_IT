@@ -1,35 +1,63 @@
 <header class="head">
   <div class="container header--flex">
-    <div class="logo">
+    <a href="./index.html" class="logo">
       <svg class="logo__svg" width="66" height="52">
         <use href="./images/icons/icons.svg#logo"></use>
       </svg>
+    </a>
+  
+    <div class="mobile-menu" data-menu-open>
+      <button type="button" class="mobile-btn">
+        <svg class="mobile-menu__svg" width="28" height="28">
+          <use href="./images/icons/icons.svg#gg_menu"></use>
+        </svg>
+      </button>
+      <div class="mobile-nav" data-menu>
+          <button type="button" class="mobile-exit" >
+          <svg class="mobile-exit__svg" width="24" height="24">
+            <use href="./images/icons/symbol-defs.svg#icon-exit"></use>
+          </svg>
+        </button>
+        <ul class="mobile-list list">
+          <li class="mobile-list__item mobile-list__item--first">
+            <a href="./" class="mobile-list__link mobile-list__link--after link">Home</a>
+          </li>
+          <li class="mobile-list__item">
+            <a href="./" class="mobile-list__link mobile-list__link--after link">About</a>
+          </li>
+          <li class="mobile-list__item">
+            <a href="./" class="mobile-list__link mobile-list__link--after link">Servise</a>
+          </li>
+          <li class="mobile-list__item">
+            <a href="./" class="mobile-list__link mobile-list__link--after link">Menu</a>
+          </li>
+          <li class="mobile-list__item mobile-list__item--last">
+            <a href="./" class="mobile-list__link mobile-list__link--after link">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <div class="menu">
-      <svg class="menu__svg" width="28" height="28">
-        <use href="./images/icons/icons.svg#gg_menu"></use>
-      </svg>
+      <div class="menu">
       <nav class="nav">
-      <ul class="menu--list list">
-        <li class="menu--list__item">
-          <a href="./" class="menu--list__link link">Home</a>
-        </li>
-        <li class="menu--list__item">
-          <a href="./" class="menu--list__link link">About</a>
-        </li>
-        <li class="menu--list__item">
-          <a href="./" class="menu--list__link link">Servise</a>
-        </li>
-        <li class="menu--list__item">
-          <a href="./" class="menu--list__link link">Menu</a>
-        </li>
-        <li class="menu--list__item">
-          <a href="./" class="menu--list__link link">Contact</a>
-        </li>
-      </ul>
-      <button class="header-btn">Order Now</button>
-    </nav>
+        <ul class="menu-list list">
+          <li class="menu-list__item menu-list__item--first">
+            <a href="./" class="menu-list__link menu-list__link--after link">Home</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="./" class="menu-list__link menu-list__link--after link">About</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="./" class="menu-list__link menu-list__link--after link">Servise</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="./" class="menu-list__link menu-list__link--after link">Menu</a>
+          </li>
+          <li class="menu-list__item menu-list__item--last">
+            <a href="./" class="menu-list__link menu-list__link--after link">Contact</a>
+          </li>
+        </ul>
+        <button class="header-btn">Order Now</button>
+      </nav>
     </div>
   </div>
 </header>
