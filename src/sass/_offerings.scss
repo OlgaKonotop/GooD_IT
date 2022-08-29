@@ -1,39 +1,59 @@
 .offerings {
+  background-size: 100%;
   @media screen and (max-width: 767px) {
    background-image: url(../images/offerings/fon-mobile.png);
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 60px; 
+    padding-left: 20px;
+      padding-right: 20px;
   }
   @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
     background-image: url(../images/offerings/fon-tablet.png);
   }
      @media screen and (min-width: 1280px){
+      display: flex;
+      
       background-image: url(../images/offerings/fon-desktop.png);
      }
 
   &__img {
     @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
       margin-right: auto;
       margin-left: auto;
-      padding-left: 30px;
-      padding-right: 24px;
-      padding-bottom: 41px;
-      padding-top: 41px;
-      width: 201.6px;
-      height: 255.55px;
+      padding-top: 70px;
      
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1279px) {
       display: flex;
       align-items: center;
       padding-top: 150px;
     }
+        @media screen and (max-width: 1280px){
+          padding-top: 231px;
+        }
+
     &--img {
+      @media screen and (max-width: 767px){
+        max-width: 280px;
+      }
       @media screen and (min-width: 768px) {
         max-width: 257px;
-        margin-left: 85px;
         margin-right: 75px;
       }
+            @media screen and (min-width: 1280px){
+              max-width: 550px;
+              margin-left: 16px;
+              margin-right: 90px;
+            }
+    }
+  }
+  &__conteiner{
+    @media screen and (min-width: 1280px){
+      display: block;
     }
   }
 
@@ -62,6 +82,15 @@
       font-size: 42px;
       line-height: calc(49px / 42px);
     }
+         @media screen and (min-width: 1280px){
+          width: 526px;
+          height: 100px;
+          font-family: var(--main-font);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: calc(50.4px / 42px);
+         }
   }
   &__paragraf {
     @media screen and (max-width: 767px) {
@@ -100,14 +129,30 @@
 .img--md {
   margin-right: 44px;
 }
+.benefit{
+  @media screen and (min-width: 1280px){
+    display: block;
+    padding-top: 260px;
+    padding-right: 51px;
+  }
+}
 .benefits {
+  @media screen and (max-width: 767px){
+    padding-top: 0;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 40px;
   }
+     
   &__list {
     @media screen and (max-width: 767px) {
       display: block;
     }
+    }
+  
+  &__item{
+    
+    
   }
   &__icon {
     margin-bottom: 8px;
@@ -130,12 +175,21 @@
     line-height: calc(21px / 18px);
   }
   &__info {
+    font-family: var(--main-font);
+      font-weight: 400;
+      font-size: 14px;
     @media screen and (min-width: 768px) {
       margin-bottom: 40px;
     }
     @media screen and (max-width: 767px) {
       margin-bottom: 28px;
     }
+        @media screen and (max-width: 1279px) {
+          line-height: calc(16.41px / 14px);
+        }
+        @media screen and (min-width: 1280px) {
+          line-height: 150%;
+        }
   }
 }
 .info__conteiner {
@@ -156,7 +210,12 @@
   background-color: white;
   border: 2px solid var(--accent-color);
   border-radius: 30px;
+  &:hover{
+    background-color: white;
+      border: 2px solid var(--accent-color)
+  }
 }
+
 .info__title {
   font-family: var(--main-font);
   font-style: normal;
@@ -169,6 +228,9 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 1280px) {
+      display: none;
+    }
 }
 .info__icon--icon {
   margin-left: 8px;
