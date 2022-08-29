@@ -57,5 +57,8 @@
         line-height: calc(19.5px / 13px);
         background-color: var(--bg-accent-cl);
         border-radius: 30px;
+        &:hover{
+          background-color: var(--bg-accent-cl);
+        }
   }
 }
