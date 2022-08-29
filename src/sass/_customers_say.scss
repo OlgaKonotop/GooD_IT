@@ -35,9 +35,19 @@
         line-height: 1.17;
         color: var(--main-txt-color);
         margin-bottom: 20px;
+        padding-top: 60px;
+        @media screen and (min-width: 480px) and (max-width:767px) {
+                text-align: center;
+                padding-top: 0;
+            }
+
+     @media screen and (min-width: 768px) {
+     padding-top: 0;
+                  
+     }
+
         @media screen and (min-width: 1280px) {
-                font-size: 42px;
-        
+                padding-top: 0;
             }
 }
 .customers-subtitle{
@@ -47,11 +57,16 @@
         line-height: 1.14;
         color: var(--main-txt-color);
         margin-bottom: 32px;
+        @media screen and (min-width: 480px) and (max-width:767px) {
+                text-align: center;
+        
+            }
         @media screen and (min-width: 768px) {
                 font-size: 16px;
         
             }
 }
+
 .customers-list__text{
     text-align: start;
     font-family: var(--main-font);
@@ -66,11 +81,10 @@
         @media screen and (min-width: 768px) {
                 margin-left: 12px;
                 margin-right: 12px;
-        
             }
         @media screen and (min-width: 1280px) {
             margin-left: 14px;
-                margin-right: 14px;
+            margin-right: 14px;
     
             }
 
@@ -93,7 +107,7 @@
 .thumb{
     display: inline-block;
     margin-left: 40px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     border-right: 1px solid #7EB101;
 }
 
@@ -102,10 +116,10 @@
     margin-left: 8px;
     margin-top: 8px;
     margin-bottom: 28px;
+    
     @media screen and (min-width: 768px) {
             margin-left: 12px;
             margin-top: 12px;
-    
         }
     
         @media screen and (min-width: 1280px) {
@@ -114,11 +128,13 @@
     
         }
 }
+
 .customers-list{
     @media screen and (min-width: 768px) {
             display: flex;
             margin-bottom: 120px;
         }
+
         @media screen and (min-width: 1280px) {
             margin-bottom: 200px;
             
@@ -138,6 +154,12 @@
         margin-bottom: 20px;
     width: 280px;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+            margin-right: auto;
+            margin-left: auto;
+    
+        }
     @media screen and (min-width: 768px) {
         width: 336px;
         margin-bottom: 0;
@@ -146,19 +168,25 @@
         @media screen and (min-width: 1280px) {
             width: 501px;
             margin-right: 139px;
-            /* верхній правий кут */
-                border-top-right-radius: 30px;
+         /* верхній правий кут */
+          border-top-right-radius: 30px;
             
-                /* нижній правий кут */
-                border-bottom-right-radius: 30px;
+         /* нижній правий кут */
+        border-bottom-right-radius: 30px;
             
-                /* нижній лівий кут */
-                border-bottom-left-radius: 30px;
-    
-        }
+        /* нижній лівий кут */
+         border-bottom-left-radius: 30px;
+     }
 }
+
 .customers-list__item:last-child{
     margin-right: 0;
+    margin-bottom: 0;
+    @media screen and (min-width: 480px) {
+            margin-right: auto;
+            margin-left: auto;
+    
+        }
 }
 
 .customers-img{
