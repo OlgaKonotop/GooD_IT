@@ -1,4 +1,8 @@
 .hero {
+  position: relative;
+  margin-top: 0;
+    top: 0;
+    left: 0;
   @media screen and (max-width: 767px) {
       padding-bottom: 50px;
       padding-top: 60px;
@@ -13,13 +17,7 @@
       padding-bottom: 164px;
       padding-top: 159px;
     }
-  &__container {
-    position: relative;
-    margin-top: 0;
-    top: 0;
-    left: 0;
-  
-  }
+ 
 
   &__title {
     @media screen and (max-width: 480px) {
@@ -120,14 +118,14 @@
     max-height: 306px;
     right: 8px;
    /* padding-bottom: 108px;*/
-    top: 28%;
+    top: 35%;
       right: 0;
   }
   @media screen and (min-width: 1280px) {
     max-width: 565px;
     max-height: 554px;
     right: 16px;
-    top: -50%;
+    top: 3%;
       right: 0;
   }
 }
