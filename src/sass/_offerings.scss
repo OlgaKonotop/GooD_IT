@@ -1,4 +1,18 @@
 .offerings {
+  @media screen and (max-width: 767px) {
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      padding-bottom: 60px;
+      padding-top: 150px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+     
+      padding-top: 177px;
+    }
   
   background-size: cover;
   @media screen and (max-width: 767px) {
@@ -24,9 +38,7 @@
     position: relative;
     top: 0;
     left: 0;
-    @media screen and (max-width: 767px) {
-          padding-top: 41px;
-          margin-bottom: 60px;
+    @media screen and (max-width: 767px) {   
       display: flex;
       justify-content: center;
       margin-right: auto;
@@ -38,7 +50,7 @@
 
     
     @media screen and (min-width: 768px) {
-      padding-top: 150px;
+     
      
       margin-bottom: 60px;
 
@@ -46,7 +58,7 @@
       align-items: center;
     }
     @media screen and (min-width: 1280px) {
-      padding-top: 177px;
+      
       margin-right: 90px;
     }
 
@@ -147,19 +159,19 @@
 
 .img--md {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 53%;
  
 }
 .img--sm {
   position: absolute;
-  top: 63%;
+  top: 55%;
   right: 0%;
 }
 .benefit {
   @media screen and (min-width: 1280px) {
     display: block;
-    padding-top: 260px;
+  padding-top: 113px;
     padding-right: 51px;
   }
 }
@@ -221,7 +233,7 @@
 .info__conteiner {
   display: flex;
   align-items: center;
-  padding-bottom: 60px;
+ 
 }
 .benefits__btn {
   padding: 0;

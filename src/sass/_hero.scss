@@ -1,19 +1,24 @@
 .hero {
+  @media screen and (max-width: 767px) {
+      padding-bottom: 50px;
+      padding-top: 60px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      padding-bottom: 115px;
+      padding-top: 60px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 164px;
+      padding-top: 159px;
+    }
   &__container {
     position: relative;
     margin-top: 0;
-    @media screen and (max-width: 767px){
-      padding-bottom: 50px;
-      padding-top:60px;
-    }
-    @media screen and (min-width: 768px) {
-      padding-bottom: 73px;
-      padding-top: 60px;
-    }
-    @media screen and (min-width: 1280px) {
-      padding-bottom: 164px;
-        padding-top: 159px;
-    }
+    top: 0;
+    left: 0;
+  
   }
 
   &__title {
@@ -102,8 +107,7 @@
 
 .swiper-container {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -115,12 +119,16 @@
     max-width: 320px;
     max-height: 306px;
     right: 8px;
-    padding-bottom: 108px;
+   /* padding-bottom: 108px;*/
+    top: 28%;
+      right: 0;
   }
   @media screen and (min-width: 1280px) {
     max-width: 565px;
     max-height: 554px;
     right: 16px;
+    top: -50%;
+      right: 0;
   }
 }
 .swiper-slide {
