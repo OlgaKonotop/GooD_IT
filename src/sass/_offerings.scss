@@ -1,40 +1,49 @@
 .offerings {
+  background-size: cover;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/offerings/fon-mobile.png);
+    // margin-top: 50px;
+    // margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/offerings/fon-tablet.png);
+    // padding-top: 108px;
+    margin-top: -108px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+
+    background-image: url(../images/offerings/fon-desktop.png);
+    // padding-top: 161px;
+    margin-top: -161px;
+  }
   &__container {
-    background-size: cover;
     @media screen and (max-width: 767px) {
-      background-image: url(../images/offerings/fon-mobile.png);
+      // background-image: url(../images/offerings/fon-mobile.png);
       margin-top: 50px;
       margin-bottom: 60px;
     }
     @media screen and (min-width: 768px) {
-      background-image: url(../images/offerings/fon-tablet.png);
+      // background-image: url(../images/offerings/fon-tablet.png);
       padding-top: 108px;
-      margin-top: -108px;
     }
     @media screen and (min-width: 1280px) {
       display: flex;
 
-      background-image: url(../images/offerings/fon-desktop.png);
+      // background-image: url(../images/offerings/fon-desktop.png);
       padding-top: 161px;
-      margin-top: -161px;
     }
   }
   &__img {
+    position: relative;
+    top: 0;
+    left: 0;
     @media screen and (max-width: 767px) {
       display: flex;
       justify-content: center;
       margin-right: auto;
       margin-left: auto;
       padding-top: 70px;
-    }
-    position: relative;
-    top: 0;
-    left: 0;
-    @media screen and (max-width: 1279px) {
-      display: flex;
-      align-items: center;
-      padding-top: 150px;
-      margin-bottom: 60px;
     }
 
     @media screen and (max-width: 767px) {
@@ -44,14 +53,22 @@
       margin-left: auto;
       padding-top: 40px;
     }
+    @media screen and (min-width: 768px) {
+      padding-top: 150px;
+      margin-right: 90px;
+      margin-bottom: 60px;
+
+      display: flex;
+      align-items: center;
+    }
     @media screen and (min-width: 1280px) {
       padding-top: 177px;
       margin-right: 90px;
     }
 
-    @media screen and (max-width: 1280px) {
-      padding-top: 231px;
-    }
+    // @media screen and (max-width: 1280px) {
+    //   padding-top: 231px;
+    // }
 
     &--img {
       @media screen and (max-width: 767px) {
@@ -150,13 +167,13 @@
 }
 .img--md {
   position: absolute;
-  top: 50%;
-  left: 38%;
+  top: 42%;
+  left: 55%;
 }
 .img--sm {
   position: absolute;
-  top: 63%;
-  left: 67%;
+  top: 58%;
+  left: 100%;
 }
 .benefit {
   @media screen and (min-width: 1280px) {
