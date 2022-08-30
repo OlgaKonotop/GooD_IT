@@ -1,11 +1,17 @@
 .hero {
   &__container {
     position: relative;
+    @media screen and (max-width: 767px){
+      padding-bottom: 50px;
+      padding-top: 60px;
+    }
     @media screen and (min-width: 768px) {
       padding-bottom: 73px;
+      padding-top: 60px;
     }
     @media screen and (min-width: 1280px) {
       padding-bottom: 164px;
+        padding-top: 159px;
     }
   }
 
@@ -34,7 +40,7 @@
       line-height: calc(49px / 42px);
     }
     @media screen and (min-width: 1280px) {
-      margin-top: 159px;
+    
       margin-bottom: 28px;
       width: 502px;
       font-family: var(--main-font);

@@ -1,7 +1,9 @@
 .offerings {
+  
   background-size: cover;
   @media screen and (max-width: 767px) {
     background-image: url(../images/offerings/fon-mobile.png);
+
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/offerings/fon-tablet.png);
@@ -13,6 +15,7 @@
     margin-top: -161px;
   }
   &__container {
+    
     @media screen and (min-width: 1280px) {
       display: flex;
     }
@@ -22,23 +25,21 @@
     top: 0;
     left: 0;
     @media screen and (max-width: 767px) {
+          padding-top: 41px;
+          margin-bottom: 60px;
       display: flex;
       justify-content: center;
       margin-right: auto;
       margin-left: auto;
-      padding-top: 70px;
+     
     }
 
-    @media screen and (max-width: 767px) {
-      display: flex;
-      justify-content: center;
-      margin-right: auto;
-      margin-left: auto;
-      padding-top: 40px;
-    }
+    
+
+    
     @media screen and (min-width: 768px) {
       padding-top: 150px;
-      margin-right: 90px;
+     
       margin-bottom: 60px;
 
       display: flex;
@@ -54,7 +55,7 @@
         max-width: 280px;
       }
       @media screen and (min-width: 768px) {
-        max-width: 257px;
+        max-width: 357px;
         /* margin-right: 75px;*/
       }
 
@@ -134,25 +135,26 @@
 }
 
 .img__tablet {
-  display: flex;
-  align-items: flex-end;
+  
+  
   @media screen and (max-width: 767px) {
     display: none;
   }
 
   @media screen and (min-width: 1280px) {
     display: none;
-  }
-}
+  }}
+
 .img--md {
   position: absolute;
-  top: 42%;
-  left: 55%;
+  top: 50%;
+  left: 53%;
+ 
 }
 .img--sm {
   position: absolute;
-  top: 58%;
-  left: 100%;
+  top: 63%;
+  right: 0%;
 }
 .benefit {
   @media screen and (min-width: 1280px) {
@@ -175,8 +177,7 @@
     }
   }
 
-  // &__item {
-  // }
+  
 
   &__icon {
     margin-bottom: 8px;
