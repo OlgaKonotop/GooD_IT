@@ -1,64 +1,81 @@
 .offerings {
   background-size: cover;
   @media screen and (max-width: 767px) {
-   background-image: url(../images/offerings/fon-mobile.png);
+    background-image: url(../images/offerings/fon-mobile.png);
     margin-top: 50px;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
     padding-left: 20px;
-      padding-right: 20px;
+    padding-right: 20px;
   }
   @media screen and (min-width: 768px) {
     padding-left: 32px;
     padding-right: 32px;
     background-image: url(../images/offerings/fon-tablet.png);
   }
-     @media screen and (min-width: 1280px){
-      display: flex;
-      
-      background-image: url(../images/offerings/fon-desktop.png);
-     }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+
+    background-image: url(../images/offerings/fon-desktop.png);
+  }
 
   &__img {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 70px;
+    }
     position: relative;
     top: 0;
     left: 0;
-    
     @media screen and (max-width: 1279px) {
       display: flex;
       align-items: center;
       padding-top: 150px;
       margin-bottom: 60px;
     }
-        @media screen and (max-width: 767px) {
-          display: flex;
-          justify-content: center;
-          margin-right: auto;
-          margin-left: auto;
-          padding-top: 40px;
-    
-        }
-        @media screen and (min-width: 1280px){
-          padding-top: 177px;
-          margin-right: 90px;
-        }
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 177px;
+      margin-right: 90px;
+    }
+
+    @media screen and (max-width: 1280px) {
+      padding-top: 231px;
+    }
 
     &--img {
-      @media screen and (max-width: 767px){
+      @media screen and (max-width: 767px) {
         max-width: 280px;
       }
       @media screen and (min-width: 768px) {
         max-width: 257px;
-       /* margin-right: 75px;*/
+        /* margin-right: 75px;*/
       }
-            @media screen and (min-width: 1280px){
-              max-width: 550px;
-              margin-left: 16px;
-            /*  margin-right: 90px;*/
-            }
+
+      @media screen and (min-width: 1280px) {
+        max-width: 550px;
+        margin-left: 16px;
+        /*  margin-right: 90px;*/
+      }
+
+      @media screen and (min-width: 1280px) {
+        max-width: 550px;
+        margin-left: 16px;
+        margin-right: 90px;
+      }
     }
   }
-  &__conteiner{
-    @media screen and (min-width: 1280px){
+  &__conteiner {
+    @media screen and (min-width: 1280px) {
       display: block;
     }
   }
@@ -74,7 +91,7 @@
       font-weight: 700;
       font-size: 28px;
       line-height: calc(33px / 28px);
-     
+
       align-items: center;
       justify-content: center;
     }
@@ -88,15 +105,15 @@
       font-size: 42px;
       line-height: calc(49px / 42px);
     }
-         @media screen and (min-width: 1280px){
-          width: 526px;
-          height: 100px;
-          font-family: var(--main-font);
-            font-style: normal;
-            font-weight: 700;
-            font-size: 42px;
-            line-height: calc(50.4px / 42px);
-         }
+    @media screen and (min-width: 1280px) {
+      width: 526px;
+      height: 100px;
+      font-family: var(--main-font);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: calc(50.4px / 42px);
+    }
   }
   &__paragraf {
     @media screen and (max-width: 767px) {
@@ -120,7 +137,6 @@
 }
 
 .img__tablet {
-  
   display: flex;
   align-items: flex-end;
   @media screen and (max-width: 767px) {
@@ -132,37 +148,39 @@
   }
 }
 .img--md {
-position: absolute;
-  top: 45%;
+  position: absolute;
+  top: 50%;
   left: 38%;
 }
 .img--sm {
-position: absolute;
+  position: absolute;
   top: 63%;
   left: 67%;
 }
-.benefit{
-  @media screen and (min-width: 1280px){
+.benefit {
+  @media screen and (min-width: 1280px) {
     display: block;
     padding-top: 260px;
     padding-right: 51px;
   }
 }
 .benefits {
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     padding-top: 0;
   }
   @media screen and (min-width: 768px) {
     padding-top: 40px;
   }
-     
+
   &__list {
     @media screen and (max-width: 767px) {
       display: block;
     }
-    }
-  
- 
+  }
+
+  // &__item {
+  // }
+
   &__icon {
     margin-bottom: 8px;
     display: flex;
@@ -185,22 +203,23 @@ position: absolute;
   }
   &__info {
     font-family: var(--main-font);
-      font-weight: 400;
-      font-size: 14px;
+    font-weight: 400;
+    font-size: 14px;
     @media screen and (min-width: 768px) {
       margin-bottom: 40px;
     }
     @media screen and (max-width: 767px) {
       margin-bottom: 28px;
     }
-        @media screen and (max-width: 1279px) {
-          line-height: calc(16.41px / 14px);
-        }
-        @media screen and (min-width: 1280px) {
-          line-height: 150%;
-        }
+    @media screen and (max-width: 1279px) {
+      line-height: calc(16.41px / 14px);
+    }
+    @media screen and (min-width: 1280px) {
+      line-height: 150%;
+    }
   }
 }
+
 .info__conteiner {
   display: flex;
   align-items: center;
@@ -219,9 +238,9 @@ position: absolute;
   background-color: white;
   border: 2px solid var(--accent-color);
   border-radius: 30px;
-  &:hover{
+  &:hover {
     background-color: white;
-      border: 2px solid var(--accent-color)
+    border: 2px solid var(--accent-color);
   }
 }
 
@@ -238,8 +257,8 @@ position: absolute;
   align-items: center;
   justify-content: center;
   @media screen and (min-width: 1280px) {
-      display: none;
-    }
+    display: none;
+  }
 }
 .info__icon--icon {
   margin-left: 8px;
