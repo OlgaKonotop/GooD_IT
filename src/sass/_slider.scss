@@ -1,27 +1,27 @@
-<<<<<<< Updated upstream
 // .slider__img {
 //   border: 26px solid #ffe550;
 //   border-radius: 50%;
 // }
-=======
-.swiper-container
- {position: absolute;
- 
+.swiper-container {
+  position: absolute;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
     height: 100%;
     width: 100%;
     max-width: 320px;
     right: 1%;
-      top: 6%;
+    top: 6%;
   }
+
   @media screen and (min-width: 1280px) {
     max-width: 565px;
     right: 2%;
-      top: 8%;
+    top: 8%;
   }
 }
 
@@ -36,16 +36,20 @@
 .swiper-button-container {
   background-color: rgba(0, 0, 0, 0.25);
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   opacity: 1;
   background: transparent;
 }
+
 .swiper-button-next {
   right: 10px;
 }
+
 .swiper-button-prev {
   left: 0;
+
   @media screen and (min-width: 1280px) {
     left: 13px;
   }
@@ -60,6 +64,7 @@
   height: 100%;
   opacity: 0.4;
 }
+
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -70,6 +75,7 @@
   transform: translateY(-5%) scale(0.8);
   transition: transform 250ms;
 }
+
 .swiper-slide-active {
   opacity: 1;
   transform: translateY(0%) scale(1);
@@ -129,4 +135,3 @@
     height: 29px;
   }
 }
->>>>>>> Stashed changes
