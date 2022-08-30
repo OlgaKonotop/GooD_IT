@@ -1,4 +1,9 @@
+// Slider
+
 .swiper-container {
+  position: absolute;
+  top: 0;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -7,12 +12,15 @@
     height: 100%;
     width: 100%;
     max-width: 320px;
+    max-height: 306px;
+    right: 8px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 565px;
+    max-height: 554px;
+    right: 16px;
   }
 }
-
 .swiper-slide {
   background-size: cover;
   display: flex;
@@ -55,12 +63,12 @@
 
   pointer-events: none;
   opacity: 0;
-  transform: translateY(-5%) scale(0.8);
+  transform: scale(0.95);
   transition: transform 250ms;
 }
 .swiper-slide-active {
   opacity: 1;
-  transform: translateY(0%) scale(1);
+  transform: scale(1);
   transition: 1s ease;
 }
 
