@@ -1,16 +1,15 @@
 <footer class="footer">
-  <div class="footer__container">
+  <div class="footer__container container">
     <div class="footer__menu">
       <div class="footer__nav">
-        <div class="logo__nav">
-          <a href="./" class="link logo__img">
-            <svg class="footer__logo" width="69" height="51">
-              <use href="./images/icons/icons.svg#logo"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="footer__items"></div>
-        <ul class="footer__items link">
+        <!-- <div class="logo__nav"> -->
+        <a href="./" class="link logo__img">
+          <svg class="footer__logo" width="69" height="51">
+            <use href="./images/icons/icons.svg#logo"></use>
+          </svg>
+        </a>
+        <!-- </div> -->
+        <ul class="footer__list link">
           <li class="footer__item menu-list__item">
             <a href="./" class="footer__link">Home</a>
           </li>
@@ -28,38 +27,34 @@
           </li>
         </ul>
       </div>
-      <section class="subscribe__section">
-        <div>
-          <h3 class="subscriber__text">Subscribe</h3>
-          <div class="form-subscription">
-            <form class="form-subscription">
-              <label class="form-subscription__label">
-                <input
-                  class="subscription__input"
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                />                
-              </label>
-              <button class="form-subscription__btn" type="submit">
-                Subscribe
-              </button>              
-            </form>            
-            <div class="subscription__policy">
-            <p class="subscription__text"></p>
-            By subscribing you agree to with our
-            <a class="subscription__link" href="">Privacy Policy</a>
-          </div>
+      <!-- <section class="subscribe__section"> -->
+      <div class="subscribe__section">
+        <h3 class="subscriber__text">Subscribe</h3>
+        <div class="subscription-form">
+          <form class="form-subscription">
+            <label class="form-subscription__label">
+              <input class="subscription__input" type="email" name="email" placeholder="Enter your email" />
+            </label>
+            <button class="form-subscription__btn" type="submit">
+              Subscribe
+            </button>
+          </form>
+          <div class="subscription__policy">
+            <p class="subscription__text">
+              By subscribing you agree to with our
+              <a class="subscription__link subscription__text" href="#">Privacy Policy</a>
+            </p>
           </div>
         </div>
-      </section>
-      
-        </div>
+      </div>
+      <!-- </section> -->
 
     </div>
+
+
     <div class="footer__info">
       <div class="info-servis">
-        <ul class="info__items">
+        <ul class="info__list">
           <li class="info__item">
             <a href="./" class="info__link">Privacy Policy</a>
           </li>
@@ -71,12 +66,12 @@
           </li>
         </ul>
       </div>
-      
+
       <div class="footer__label">
-        
+
         <p class="footer__copyright">2022 FoodSta. All right reserved.</p>
       </div>
     </div>
   </div>
-  
+
 </footer>
