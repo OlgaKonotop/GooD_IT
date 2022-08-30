@@ -1,23 +1,24 @@
 .offerings {
-  background-size: cover;
-  @media screen and (max-width: 767px) {
-    background-image: url(../images/offerings/fon-mobile.png);
-    margin-top: 50px;
-    margin-bottom: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-    background-image: url(../images/offerings/fon-tablet.png);
-  }
-  @media screen and (min-width: 1280px) {
-    display: flex;
+  &__container {
+    background-size: cover;
+    @media screen and (max-width: 767px) {
+      background-image: url(../images/offerings/fon-mobile.png);
+      margin-top: 50px;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/offerings/fon-tablet.png);
+      padding-top: 108px;
+      margin-top: -108px;
+    }
+    @media screen and (min-width: 1280px) {
+      display: flex;
 
-    background-image: url(../images/offerings/fon-desktop.png);
+      background-image: url(../images/offerings/fon-desktop.png);
+      padding-top: 161px;
+      margin-top: -161px;
+    }
   }
-
   &__img {
     @media screen and (max-width: 767px) {
       display: flex;
