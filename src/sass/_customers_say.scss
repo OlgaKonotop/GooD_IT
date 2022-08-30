@@ -1,9 +1,8 @@
-// .customers-section {
 
-// }
-.customers-container {
+.customers-section {
   padding-top: 60px;
 }
+
 .customers-background {
   margin-right: auto;
   margin-left: auto;
@@ -15,18 +14,19 @@
   background-image: url('/src/images/customers_say/bgmobile.png');
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    // width: 480px;
     height: 769px;
     background-image: url('/src/images/customers_say/bg480.png');
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    // width: 768px;
     height: 554px;
     background-image: url('/src/images/customers_say/backgraund-tablet.png');
   }
+
   @media screen and (min-width: 1280px) {
-    width: 1280px;
+    // width: 1280px;
     height: 647px;
     background-image: url('/src/images/customers_say/backgraund-desktop.png');
   }
@@ -39,19 +39,11 @@
   line-height: 1.17;
   color: var(--main-txt-color);
   margin-bottom: 20px;
-  padding-top: 60px;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     text-align: center;
-    padding-top: 0;
+    
   }
 
-  @media screen and (min-width: 768px) {
-    padding-top: 0;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 0;
-  }
 }
 .customers-subtitle {
   font-family: var(--main-font);
@@ -105,8 +97,15 @@
 .thumb {
   display: inline-block;
   margin-left: 40px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   border-right: 1px solid #7eb101;
+  @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+     @media screen and (min-width: 1280px) {
+      margin-bottom: 18px;
+     }
+
 }
 
 .customers-list__icon {
