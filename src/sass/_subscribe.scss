@@ -1,0 +1,109 @@
+.subscriber-title {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--main-txt-color);
+    margin-top: -25px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 480px) {
+            margin-top: -100px;
+        }
+    @media screen and (min-width: 768px) {
+            font-size: 42px;
+    
+        }
+}
+
+.subscriber-subtitle {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--main-txt-color);
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+            font-size: 16px;
+    
+        }
+}
+
+.form-subscription__input {
+    display: block;
+    width: 279px;
+    height: 42px;
+    padding: 12px 12px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+        width: 395px;
+        display: inline-block;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 22px;
+
+    }
+
+}
+
+.form-subscription__btn {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    width: 102px;
+    height: 42px;
+    padding: 11px 22px;
+    background: #FFFFFF;
+    cursor: pointer;
+    border: 0.854167px solid #7EB101;
+    border-radius: 30px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {
+        margin-left: 0;
+    }
+
+}
+.form-subscription__btn:hover,
+.form-subscription__btn:focus{
+    background: #B5FF00;
+    border: none;
+}
+
+.form-subscription__box {
+    display: flex;
+    text-align: end;
+
+
+}
+.banan-img{
+    display: inline-block;
+    position: relative;
+    bottom: 46px;
+    @media screen and (min-width: 480px) {
+            bottom: 120px;
+            left: 85px;
+        }
+
+     @media screen and (min-width: 768px) {
+        bottom: 130px;
+        left: 430px;
+         }
+                 @media screen and (min-width: 1280px) {
+                     left: 656px;
+                     top:100px
+                 }
+
+}
+.conainer-subscriber{
+    @media screen and (min-width: 1280px)
+     {
+        margin-top: -200px
+        }
+}
