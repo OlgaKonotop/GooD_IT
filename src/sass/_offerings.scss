@@ -1,5 +1,5 @@
 .offerings {
-  background-size: 100%;
+  background-size: cover;
   @media screen and (max-width: 767px) {
    background-image: url(../images/offerings/fon-mobile.png);
     margin-top: 50px;
@@ -19,21 +19,27 @@
      }
 
   &__img {
-    @media screen and (max-width: 767px) {
-      display: flex;
-      justify-content: center;
-      margin-right: auto;
-      margin-left: auto;
-      padding-top: 70px;
-     
-    }
+    position: relative;
+    top: 0;
+    left: 0;
+    
     @media screen and (max-width: 1279px) {
       display: flex;
       align-items: center;
       padding-top: 150px;
+      margin-bottom: 60px;
     }
-        @media screen and (max-width: 1280px){
-          padding-top: 231px;
+        @media screen and (max-width: 767px) {
+          display: flex;
+          justify-content: center;
+          margin-right: auto;
+          margin-left: auto;
+          padding-top: 40px;
+    
+        }
+        @media screen and (min-width: 1280px){
+          padding-top: 177px;
+          margin-right: 90px;
         }
 
     &--img {
@@ -42,12 +48,12 @@
       }
       @media screen and (min-width: 768px) {
         max-width: 257px;
-        margin-right: 75px;
+       /* margin-right: 75px;*/
       }
             @media screen and (min-width: 1280px){
               max-width: 550px;
               margin-left: 16px;
-              margin-right: 90px;
+            /*  margin-right: 90px;*/
             }
     }
   }
@@ -114,10 +120,9 @@
 }
 
 .img__tablet {
+  
   display: flex;
   align-items: flex-end;
-}
-.img__tablet {
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -127,7 +132,14 @@
   }
 }
 .img--md {
-  margin-right: 44px;
+position: absolute;
+  top: 45%;
+  left: 38%;
+}
+.img--sm {
+position: absolute;
+  top: 63%;
+  left: 67%;
 }
 .benefit{
   @media screen and (min-width: 1280px){
@@ -150,10 +162,7 @@
     }
     }
   
-  &__item{
-    
-    
-  }
+ 
   &__icon {
     margin-bottom: 8px;
     display: flex;

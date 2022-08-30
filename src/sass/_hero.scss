@@ -1,4 +1,11 @@
 .hero {
+position: relative;
+left: 0;
+top: 0;
+@media screen and (min-width: 768px){
+  width: 768px;
+}
+
   &__title {
     @media screen and (max-width: 480px) {
       font-family: var(--main-font);
@@ -23,6 +30,16 @@
       font-size: 42px;
       line-height: calc(49px / 42px);
     }
+        @media screen and (min-width: 1280px){
+          margin-top: 159px;
+          margin-bottom: 28px;
+          width: 502px;
+          font-family: var(--main-font);
+          font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+        }
   }
  &__info {
     @media screen and (max-width: 767px) {
@@ -36,7 +53,7 @@
     }
 
     @media screen and (min-width: 768px) {
-      width: 500px;
+      width: 336px;
       margin-bottom: 40px;
       font-family: var(--main-font);
       font-style: normal;
@@ -44,6 +61,14 @@
       font-size: 16px;
       line-height: calc(19px / 16px);
     }
+        @media screen and (min-width: 1280px){
+          width: 502px;
+          font-family: var(--main-font);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+              line-height: calc(24px / 16px);
+        }
   }
   &__btn{
     padding: 0;
