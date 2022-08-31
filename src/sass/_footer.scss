@@ -304,34 +304,45 @@
     font-size: 12px;
   }
 }
+.pwm-field-icon {
+  display: none;
+}
+.text-field__input {
+  outline: none;
+}
+.text-field__input {
+  background-image: none;
+}
+.text-field__input:placeholder-shown:focus {
+  border-color: #ffe550;
+  box-shadow: 0 0 0 0.15rem #f4e382;
+  background-image: none;
+}
 
 .text-field__input:invalid,
 .text-field__input:valid {
   border-color: #dc3545;
   padding-right: 2.25rem;
+}
+
+.text-field__input:valid {
+  border-color: #ffe550;
+}
+
+.text-field__input:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.15rem rgba(189, 41, 56, 0.714);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.5625rem center;
   background-size: 1.125rem 1.125rem;
 }
 
-.text-field__input:valid {
-  border-color: #FFE550;
-  background-image: url("http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-}
-
-.text-field__input:invalid:focus {
-  border-color: #dc3545;
-  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
-}
-
-.text-field__input:valid:focus {
-  border-color: #FFE550;
-  box-shadow: 0 0 0 0.25rem rgba(210, 224, 8, 0.25);
-}
-
-
-.footer__border {
-  border-bottom: 1px solid #FEFEFE;  
-    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+.text-field__input:valid:not(:placeholder-shown) {
+  border-color: #7eb101;
+  box-shadow: 0 0 0 0.15rem #b5ff00;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5625rem center;
+  background-size: 1.125rem 1.125rem;
 }
