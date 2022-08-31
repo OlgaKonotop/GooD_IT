@@ -1,26 +1,33 @@
 .hero {
-  position: relative;
-  margin-top: 0;
-    top: 0;
-    left: 0;
+  // margin-top: 0;
+  // top: 0;
+  // left: 0;
+  // position: relative;
   @media screen and (max-width: 767px) {
-      padding-bottom: 50px;
-      padding-top: 60px;
-    }
-  
+    padding-bottom: 50px;
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 0;
+  }
+
+  &__container {
+    position: relative;
     @media screen and (min-width: 768px) {
-      padding-bottom: 115px;
-      padding-top: 60px;
+      padding-bottom: 73px;
     }
-  
     @media screen and (min-width: 1280px) {
       padding-bottom: 164px;
       padding-top: 159px;
     }
- 
-
+  }
   &__title {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       font-family: var(--main-font);
       margin-bottom: 28px;
       width: 280px;
@@ -44,7 +51,6 @@
       line-height: calc(49px / 42px);
     }
     @media screen and (min-width: 1280px) {
-    
       margin-bottom: 28px;
       width: 502px;
       font-family: var(--main-font);
@@ -96,8 +102,8 @@
     background-color: var(--bg-accent-cl);
     border-radius: 30px;
     &:hover {
-     background: #B5FF00;
-border-radius: 30px;
+      background: #b5ff00;
+      border-radius: 30px;
     }
   }
 }
@@ -106,7 +112,8 @@ border-radius: 30px;
 
 .swiper-container {
   position: absolute;
-  
+  bottom: 0;
+  right: 0;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -118,16 +125,16 @@ border-radius: 30px;
     max-width: 320px;
     max-height: 306px;
     right: 8px;
-   /* padding-bottom: 108px;*/
-    top: 35%;
-      right: 2%;
+    /* padding-bottom: 108px;*/
+    bottom: 0;
+    right: 3%;
   }
   @media screen and (min-width: 1280px) {
     max-width: 565px;
     max-height: 554px;
     right: 16px;
     top: 3%;
-      right: 0;
+    right: 3%;
   }
 }
 .swiper-slide {
